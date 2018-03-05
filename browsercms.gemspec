@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.add_dependency("bootstrap-sass", "~> 3.2.0.2")
   s.add_dependency("ancestry", "~> 2.0.0")
   s.add_dependency("underscore-rails", "~> 1.4")
-  s.add_dependency("jquery-rails", "~> 3.1")
+  s.add_dependency("jquery-rails", "~> 4.3.1")
   s.add_dependency("jquery-ui-rails", ">= 4.1")
   s.add_dependency("paperclip", "~> 5.2.0")
   s.add_dependency("panoramic")
