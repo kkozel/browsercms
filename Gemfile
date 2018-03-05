@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.2.1'
 
 # Load this project as a gem.
 gemspec
-gem "mysql2"
+gem "mysql2", "0.3.18"
 
 gem 'yard', :groups=>[:development, :test]
 gem 'bluecloth', :groups=>[:development, :test] # For YARD
