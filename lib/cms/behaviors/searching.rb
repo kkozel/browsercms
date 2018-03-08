@@ -14,25 +14,25 @@ module Cms
           extend ClassMethods
         
           #This is in a method to allow classes to override it
-          scope :search, lambda{|search_params|
-            term = search_params.is_a?(Hash) ? search_params[:term] : search_params
-            conditions = []
-            unless term.blank?
-              searchable_columns.each do |c|
-                if conditions.empty?
-                  conditions = ["#{table_name}.#{c} like ?"]
-                else
-                  conditions.first << "or #{table_name}.#{c} like ?"
-                end
-                conditions << "%#{term}%"
-              end
-              #conditions[0] = "(#{conditions[0]})"
-            end
-            where(conditions)
+         # scope :search, lambda{|search_params|
+         #   term = search_params.is_a?(Hash) ? search_params[:term] : search_params
+         #   conditions = []
+         #   unless term.blank?
+         #     searchable_columns.each do |c|
+         #       if conditions.empty?
+         #         conditions = ["#{table_name}.#{c} like ?"]
+         #       else
+         #         conditions.first << "or #{table_name}.#{c} like ?"
+         #       end
+         #       conditions << "%#{term}%"
+         #     end
+         #     #conditions[0] = "(#{conditions[0]})"
+         #   end
+         #   where(conditions)
             #scope = {}
             #scope[:conditions] = conditions if conditions
             #scope
-          }
+          #}
         end
       end
       module ClassMethods
