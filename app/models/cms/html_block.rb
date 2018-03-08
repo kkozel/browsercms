@@ -13,18 +13,18 @@ module Cms
       "%#{term}%"
     end
     # Override of search scope from searching behavior to deal with include_body
-    def self.search(search_params)
-      term = search_params.is_a?(Hash) ? search_params[:term] : search_params
-      include_body = search_params.is_a?(Hash) ? search_params[:include_body] : false
+#    def self.search(search_params)
+#      term = search_params.is_a?(Hash) ? search_params[:term] : search_params
+#      include_body = search_params.is_a?(Hash) ? search_params[:include_body] : false
 
 
-      conditions = ["name like lower(?)", eager_matching(term)]
-      if include_body
-        conditions[0] << "OR content like lower(?)"
-        conditions << eager_matching(term)
-      end
-      where(conditions)
-    end
+#      conditions = ["name like lower(?)", eager_matching(term)]
+#      if include_body
+#        conditions[0] << "OR content like lower(?)"
+#        conditions << eager_matching(term)
+#      end
+#      where(conditions)
+#    end
 
     def self.display_name
       "Text"
