@@ -11,8 +11,8 @@ PATH
       jquery-rails (~> 3.1)
       jquery-ui-rails (~> 4.1)
       panoramic
-      paperclip (~> 3.4)
-      rails (~> 4.2.0)
+      paperclip (~> 4.1.0)
+      rails (~> 4.0.0)
       sass-rails
       simple_form (~> 3.1.0)
       term-ansicolor
@@ -200,7 +200,7 @@ GEM
     orm_adapter (0.5.0)
     panoramic (0.0.6)
       rails (>= 3.0.7)
-    paperclip (3.5.4)
+    paperclip (4.1.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
